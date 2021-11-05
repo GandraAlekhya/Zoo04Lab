@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Denise Case
  */
 @Controller
-public class ZooIndexController {
+public class ZooController {
 
     private static final String GREETING_MESSAGE = "Welcome to our 542 Zoo!";
     private static final String GOODBYE_MESSAGE = "Thank you for visiting our zoo!";
@@ -47,13 +47,56 @@ public class ZooIndexController {
     }
 
     /**
-     * Map GET request to "/about" to about().
+     * Map GET request to "/about" to about() method.
      *
      * @return filename from src/main/resources/templates folder
      */
     @GetMapping(path = "/about")
     public String about() {
         return "about";
+    }
+
+    /**
+     * Map GET request to "/games" to games() method.
+     *
+     * @return filename from src/main/resources/templates folder
+     */
+    @GetMapping(path = "/games")
+    public String games() {
+        return "games";
+    }
+
+    /**
+     * Map GET request to "/persons" to persons() method.
+     *
+     * @return filename from src/main/resources/templates folder
+     */
+    @GetMapping(path = "/persons")
+    public String persons() {
+        return "persons";
+    }
+    
+    
+    
+
+    /**
+     * Map GET request to "/rides" to rides() method.
+     *
+     * @return filename from src/main/resources/templates folder
+     */
+    @GetMapping(path = "/rides")
+    public String rides() {
+        return "rides";
+    }
+
+    /**
+     * Map GET request to "/vehicles" to vehicles() method.
+     *
+     * @return filename from src/main/resources/templates folder
+     */
+    @GetMapping(path = "/vehicles")
+    public String vehicles() {
+        return "vehicles";
     }
 
     private String getCustomAnimalGroup(String id) {
@@ -64,7 +107,7 @@ public class ZooIndexController {
         PrintStream old = System.out;
         // Tell Java to use your special stream
         System.setOut(newPrintStream);
-        
+
         var intID = Integer.parseInt(id);
 
         switch (intID) {
