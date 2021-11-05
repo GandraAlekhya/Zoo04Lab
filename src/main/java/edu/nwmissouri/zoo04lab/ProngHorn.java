@@ -73,8 +73,41 @@ public class ProngHorn extends Animal {
     public void sub(int a ,int b)
     {
         System.out.println(a-b);
+<<<<<<< HEAD
     }
     
+   
+    
+
+     /**
+     * Custom ProngHorn function - your class must use a unique function name
+     * unique first parameter identifier unique second parameter identifier do
+     * something creative
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * @return double sum
+     */
+    public double getProngHornAddition(double valueOne, int  valueTwo) {
+        return valueOne + valueTwo;
+=======
+>>>>>>> d6d5d7654860ce763bfe107ee87bddcc6d5cac95
+    }
+    /**
+     * function profess1 calls the getProngHornAddition method
+     
+     */
+    
+    
+     public void profess1() {
+        double a = 2.5;
+        int b = 2;
+        double c = getProngHornAddition(a, b);
+        System.out.printf("I know ProngHornAddition! %4.2f plus %d is %4.2f \n", a, b, c);
+    } 
+    
+<<<<<<< HEAD
+=======
    
     
 
@@ -94,8 +127,6 @@ public class ProngHorn extends Animal {
      * function profess1 calls the getProngHornAddition method
      
      */
-    
-    
      public void profess1() {
         double a = 2.5;
         int b = 2;
@@ -103,6 +134,7 @@ public class ProngHorn extends Animal {
         System.out.printf("I know ProngHornAddition! %4.2f plus %d is %4.2f \n", a, b, c);
     } 
     
+>>>>>>> d6d5d7654860ce763bfe107ee87bddcc6d5cac95
    /**
     * main method 
     
